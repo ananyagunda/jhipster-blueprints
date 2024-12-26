@@ -62,7 +62,8 @@ python -m venv .venv
 
 2. Activate the virtual environment
 ```
-source .venv/bin/activate
+for mac/linux : source .venv/bin/activate
+for windows : .venv\Scripts\activate
 ```
 
 3. Install the requirements for project

@@ -62,7 +62,8 @@ python -m venv .venv
 
 2. Activate the virtual environment
 ```
-source .venv/bin/activate
+for linux/mac : source .venv/bin/activate
+for windows : .venv\Scripts\activate
 ```
 
 3. Install the requirements for project
@@ -72,7 +73,8 @@ pip install -r requirements.txt
 
 4. Enter the `app/` directory, Run the FastAPI application: 
 ```
-gunicorn -c gunicorn_dev_config.py main:app
+for linux/mac : gunicorn -c gunicorn_dev_config.py main:app
+for windows : uvicorn main:app --reload
 ```
 
 
